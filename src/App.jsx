@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <Page2 />
+    <Page2 name="dark vador"/>
 
     </>
   );

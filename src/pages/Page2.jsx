@@ -1,6 +1,17 @@
-function Page2 () {
+import { useEffect, useState } from "react";
+
+function Page2 ({name}) {
+  const [starWarsCharacters, setStarWarsCharacters] = useState([]);
+
+  useEffect(() => {
+    fetch('https://miadil.github.io/starwars-api/api/all.json').then((result) => result.json()).then((result) => console.log(result) || setStarWarsCharacters(result));[]})
+  
     return (
+       
         <div className="container">
+           {starWarsCharacters.map(character => {
+          return <div>{character.name}</div>
+        })}
         <img
           className="photoProfile"
           src="https://vignette.wikia.nocookie.net/fr.starwars/images/3/32/Dark_Vador.jpg"
@@ -11,7 +22,7 @@ function Page2 () {
             <ul>
               <li>nom</li>
               <li>taille</li>
-              <li>age</li>
+              <li>{name}</li>
             </ul>
           </div>
           <div className="detailProfil">
@@ -46,4 +57,6 @@ function Page2 () {
     )
 }
 
+
+const citations = [];
 export default Page2
