@@ -14,16 +14,7 @@ function App() {
 
   return (
     <>
-    <div>
-      {starWarsCharacters.length > 0 ? (
-        <>
-          <p>{starWarsCharacters[4].height}</p>
-          <Link to="/Character">ceci est lien</Link>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
+
     </>
   );
 }
