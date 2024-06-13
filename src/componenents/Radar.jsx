@@ -13,11 +13,13 @@ function Radar() {
     <>
       <h1>StarMatch</h1>
       <div className="radar">
-        {/* <img
-        src="assets\MilleniumFalcon.png"
-        alt="MileniumF"
-        className="radar__overlay"
-        /> */}
+        <div className="img-falcon-box">
+          <img
+            src="assets\MilleniumFalconWS.png"
+            alt="MileniumF"
+            className="radar__overlay"
+          />
+        </div>
 
         <div
           id="dot1"
