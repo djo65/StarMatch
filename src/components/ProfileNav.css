@@ -1,6 +1,9 @@
+
+
+
 .profile-nav {
   padding: 20px;
-
+  
 }
 
 .profile-header {
@@ -9,19 +12,23 @@
   text-align: center;
   margin-bottom: 20px;
   border-radius: 10px;
+  color: black;
+ opacity: 0.6;
 }
 
 .profile-row {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+ 
   margin-bottom: 20px;
 }
 
 .profile-image {
-  width: 30%;
+  width: 75%;
   height: 100px;
   background-color: #d3d3d3;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -35,6 +42,12 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+}
+
+.profile-image-link, .profile-image-wide-link {
+  text-decoration: none;
+  width: 100%;
+
 }
 
 
