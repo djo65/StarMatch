@@ -15,7 +15,7 @@ function Radar() {
       <div className="radar">
         <div className="img-falcon-box">
           <img
-            src="assets\MilleniumFalconWS.png"
+            src="assets\MilleniumFalconSG.png"
             alt="MileniumF"
             className="radar__overlay"
           />
