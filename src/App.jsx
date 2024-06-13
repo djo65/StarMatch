@@ -1,16 +1,29 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect ,useState  } from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
-import Page2 from "./pages/Page2";
+import Character from "./pages/Character";
+
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [starWarsCharacters, setStarWarsCharacters] = useState([]);
+  useEffect(() => {
+    fetch("https://miadil.github.io/starwars-api/api/all.json")
+      .then((result) => result.json())
+      .then((result) => setStarWarsCharacters(result));
+  }, []);
 
   return (
     <>
-    <Page2 name="dark vador"/>
-
+    <div>
+      {starWarsCharacters.length > 0 ? (
+        <>
+          <p>{starWarsCharacters[4].height}</p>
+          <Link to="/Character">ceci est lien</Link>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
     </>
   );
 }

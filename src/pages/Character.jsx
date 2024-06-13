@@ -1,35 +1,39 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Character.css";
 
-function Page2 ({name}) {
-  const [starWarsCharacters, setStarWarsCharacters] = useState([]);
+function Character ({}) {
+  const [starWarsCharacters, setStarWarsCharacters] = useState({});
+  const { id } = useParams();
 
   useEffect(() => {
-    fetch('https://miadil.github.io/starwars-api/api/all.json').then((result) => result.json()).then((result) => console.log(result) || setStarWarsCharacters(result));[]})
+    fetch('https://miadil.github.io/starwars-api/api/id/4.json')
+      .then((result) => result.json())
+      .then((result) => console.log(result) || setStarWarsCharacters(result));
+    }, [])
   
     return (
-       
+        
         <div className="container">
-           {starWarsCharacters.map(character => {
-          return <div>{character.name}</div>
-        })}
         <img
           className="photoProfile"
-          src="https://vignette.wikia.nocookie.net/fr.starwars/images/3/32/Dark_Vador.jpg"
+          src={starWarsCharacters.image}
           alt="#"
         />
         <div className="detailsProfils">
           <div className="detailProfil">
             <ul>
-              <li>nom</li>
-              <li>taille</li>
-              <li>{name}</li>
+              <li>{starWarsCharacters.name}</li>
+              <li>Taille :{starWarsCharacters.height}m</li>
+              <li>{starWarsCharacters.mass}kg</li>
             </ul>
           </div>
           <div className="detailProfil">
             <ul>
-              <li>genre</li>
-              <li>planete</li>
-              <li>espece</li>
+              <li>{starWarsCharacters.gender}</li>
+              <li>{starWarsCharacters.homeworld}</li>
+              <li>{starWarsCharacters.species}</li>
             </ul>
           </div>
         </div>
@@ -41,16 +45,18 @@ function Page2 ({name}) {
               src="../src/assets/ewok_icon-icons.com_76943.svg"
               alt=""
             />
-            <p>Like</p>
+            <p className="p1">Like</p>
           </div>
+          <Link to= "/">
           <div className="like">
             <img
               id="imgDislike"
               src="../src/assets/jabba-the-hutt_icon-icons.com_76950.svg"
               alt=""
             />
-            <p>dislike</p>
+            <p className="p2">dislike</p>
           </div>
+          </Link>
         </div>
         <button>Envoyer message</button>
       </div>
@@ -59,4 +65,4 @@ function Page2 ({name}) {
 
 
 const citations = [];
-export default Page2
+export default Character
