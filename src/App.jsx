@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from './components/Header.jsx';
 import Body from './components/Body.jsx';
@@ -7,6 +8,7 @@ import logo from './assets/chewbacca.svg';
 import logo1 from './assets/r2d2.svg';
 import logo2 from './assets/ligthsaber.svg';
 import logo3 from './assets/c3p0.svg';
+import Radar from "./componenents/Radar";
 
 import './App.css';
 
@@ -21,6 +23,7 @@ const App = () => {
             </header>
             <div className="app-body">
                 <Body />
+                <Radar />
                 <Footer />
             </div>
             <img src={logo} className="bottom-left-logo" alt="Logo" />
@@ -32,6 +35,11 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+
 
 
 
