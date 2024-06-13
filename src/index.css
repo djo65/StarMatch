@@ -1,3 +1,13 @@
-:root {
-  background-color: white;
+.profile-header {
+  font-family: "Starjout", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: url("/space-1164579_640.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
 }

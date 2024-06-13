@@ -8,7 +8,7 @@ function Character ({}) {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch('https://miadil.github.io/starwars-api/api/id/4.json')
+    fetch('https://miadil.github.io/starwars-api/api/id/9.json')
       .then((result) => result.json())
       .then((result) => console.log(result) || setStarWarsCharacters(result));
     }, [])

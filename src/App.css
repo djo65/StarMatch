@@ -9,4 +9,57 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Starjout";
+  src: url("./Starjout.ttf") format("truetype");
+}
+
+.Starjout {
+  font-family: "Starjout";
+  opacity: 0.8;
+}
+
+.app-header {
+  opacity: 0.9;
+}
+
+.app-body {
+  opacity: 0.95;
+}
+
+.bottom-left-logo {
+  position: relative;
+  bottom: 5px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  right: 90px;
+}
+
+.bottom-secund-logo {
+  position: relative;
+  bottom: 15px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  right: 40px;
+}
+
+.bottom-third-logo {
+  position: relative;
+  width: 50px;
+  height: auto;
+  left: 15px;
+  bottom: 8px;
+}
+
+.bottom-fourth-logo {
+  bottom: 10px;
+  position: relative;
+  width: 50px;
+  height: auto;
+  left: 70px;
 }
