@@ -10,11 +10,21 @@ function Character() {
   const { id } = useParams();
 
   const citations = [
-    "La force est puissante dans ma famille.",
-    "Que la force soit avec toi.",
-    "Je suis ton père.",
-    "C’est un piège!",
-    "J'ai un mauvais pressentiment.",
+    "Avant j'étais aventurier, et puis... j'ai pris un coup de blast dans le genoux.",
+    "Ma passion c'est de joueur à des FPS avec les Stomtrooper !",
+    "J'ai pas la force en moi, mais je sais courir vite si t'es parents sont pas chez toi ce soir !",
+    "J'étais Hand Solo jusque là, mais peut être que nous pourrions Chewbaccer ensemble ?",
+    "Je ne suis pas la personne la plus chaude de la galaxy, je n'en reste pas moins une sacrée chose !",
+    "Ma passion première ? La cantina, j'aime boire du swebelub jusqu'à plus soif",
+    "Je Buzz l'éclaire et je viens en paix..",
+    "RHHRRRRRROOOAW",
+    "Mon pote droide me demande si j'ai de l'huile pour le remplir, mais je suis pas sur que ce soit la même huile à laquel je pense, c'est normal d'après vous ?",
+    "J'ai déjà vu la même de mon pote en string sur tatooine, maintenant j'ai un beau fils",
+    "Si vous rejoigner mon club de lycée 'Le coté obscure', on vous offre des cookies",
+    "Je cherche mon père sur cette application, un grand monsieur, un peu impulsif et des tendance de démence",
+    "Je chasse le Veermok à mes heures perdu",
+    "Une fois j'ai essayer de dresser un Rancor... il était bébé et il m'a cassé le bras",
+    "Je cherche des gens proches de ma planète parce que j'ai pas le permis",
   ];
 
   useEffect(() => {
