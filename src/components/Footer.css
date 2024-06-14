@@ -6,16 +6,39 @@
   align-items: flex-start;
 }
 
-.footer-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.bottom-left-logo {
+  
+  bottom: 5px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  right: 90px;
 }
 
-.h3 {
-
-
+.bottom-secund-logo {
+  
+  bottom: 15px;
+  width: 50px;
+  height: auto;
+  opacity: 0.8;
+  right: 40px;
 }
 
+.bottom-third-logo {
+  
+  width: 50px;
+  height: auto;
+  left: 15px;
+  bottom: 8px;
+}
+
+.bottom-fourth-logo {
+  
+  
+  width: 50px;
+  height: auto;
+  left: 70px;
+}
 
   
