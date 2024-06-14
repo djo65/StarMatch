@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import "./Pub.css"
+import boutonLaser from './boutonLaser';
+import pubSound from '../assets/pub.mp3';
+
 const Pub = () => {
     const [isOn, setIsOn] = useState(false);
 
     const toggleLightsaber = () => {
         setIsOn(prevIsOn => !prevIsOn);
+        new Audio(pubSound).play();
     };
 
     const lightsaberStyle = {
@@ -21,7 +25,9 @@ const Pub = () => {
                     </div>
                     <div className="plasma vader" style={lightsaberStyle}></div>
                 </div>
-                <button className="lightsaber-button">Cliquer ici Salope !</button>
+                <button>
+                <boutonLaser />Appuie sur mon sabre coquine !!
+                </button>
             </div>
         </div>
     );
