@@ -13,7 +13,6 @@ function ProfileNav  ({image, id, name}) {
       <img className='profile-image' src= {image} alt={name} />
       </Link>
      
-      
       </div>
   );
 };

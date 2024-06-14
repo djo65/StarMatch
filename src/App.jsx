@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import ProfileNav from './components/ProfileNav.jsx';
-import Radar from "./componenents/Radar";
+import Radar from "./components/Radar";
 import { useEffect ,useState  } from "react";
 import Pub from './components/Pub.jsx';
 
