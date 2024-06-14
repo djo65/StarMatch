@@ -10,16 +10,16 @@ html {
   min-width: 100%;
   box-sizing: border-box;
   margin: 0;
-  background-color: white;
   min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(../assets/nuitEtoiles.jpg);
 
   .photoProfile {
     display: flex;
     justify-content: center;
-
+    box-shadow: 6px 5px 12px 6px rgb(200, 50, 220);
     height: auto;
     width: 70%;
     margin-top: 30px;
@@ -29,19 +29,42 @@ html {
   .detailsProfils {
     display: flex;
     justify-content: center;
-
+    background-image: url(../assets/robot2.jpg);
     margin-top: 20px;
-    width: 75%;
-    height: 30vh;
+    width: 90%;
+    height: 36vh;
 
-    .detailProfil {
-      border: 1px solid red;
+    .detailProfil1 {
       width: 100%;
       height: 100%;
 
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px;
+      }
+
       li {
         list-style: none;
-        color: black;
+        color: rgb(230, 224, 224);
+      }
+    }
+
+    .detailProfil2 {
+      width: 100%;
+      height: 100%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 5px;
+      }
+
+      li {
+        list-style: none;
+        color: rgb(242, 242, 243);
       }
     }
   }
@@ -52,23 +75,35 @@ html {
     width: 100%;
   }
 
-  .like {
+  .like1 {
+    img {
+      width: 60px;
+      height: 100%;
+    }
+
+    #imgLike {
+      margin-top: -8px;
+    }
+
+    .p1 {
+      margin-top: -18px;
+      color: rgb(235, 236, 245);
+    }
+  }
+
+  .like2 {
     img {
       width: 60px;
       height: 100%;
     }
 
     #imgDislike {
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
-    .p1 {
-      margin-top: -13px;
+    .p2 {
+      margin-top: 7px;
+      color: rgb(237, 237, 237);
     }
-  }
-  button {
-    margin-top: 17px;
-    width: 11rem;
-    height: 2.5rem;
   }
 }
