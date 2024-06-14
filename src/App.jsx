@@ -16,8 +16,12 @@ const App = () => {
       .then((result) => setStarWarsCharacters(result));
   }, []);
 
-  const specificIds = [1, 22, 13];
-    const filteredCharacters = starWarsCharacters.filter(character => specificIds.includes(character.id));
+  const getRandomElements = (arr, num) => {
+    const shuffled = [...arr].sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, num);
+  };
+
+  const filteredCharacters = getRandomElements(starWarsCharacters, 3);
 
     return (
         <div className="app">       
