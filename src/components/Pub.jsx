@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import "./Pub.css"
+import pubSound from '../assets/pub.mp3';
+
 const Pub = () => {
     const [isOn, setIsOn] = useState(false);
 
     const toggleLightsaber = () => {
         setIsOn(prevIsOn => !prevIsOn);
+        new Audio(pubSound).play();
     };
 
     const lightsaberStyle = {
