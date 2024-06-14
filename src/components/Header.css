@@ -7,29 +7,21 @@
 }
 
 .profile-image {
-
   border-radius: 20px;
+  box-shadow: 9px -4px 11px 1px #5a0466;
 }
 
 .profile-header {
-  color: #FFE81F; 
-  text-shadow:
-      1px 1px 0 #000,
-      -1px -1px 0 #000,
-      1px -1px 0 #000,
-      -1px 1px 0 #000,
-      1px 0 0 #000,
-      -1px 0 0 #000,
-      0 1px 0 #000,
-      0 -1px 0 #000; 
+  color: #ffe81f;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;
   text-align: center;
   margin: 20px;
-  
-  h1{
+
+  h1 {
     font-size: 3rem;
   }
-  h2{
+  h2 {
     font-size: 1.5rem;
   }
 }
-
