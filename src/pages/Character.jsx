@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./Character.css";
+import Bouton from"../components/bouton";
 
 function Character ({}) {
   const [starWarsCharacters, setStarWarsCharacters] = useState({});
@@ -22,14 +23,15 @@ function Character ({}) {
           alt="#"
         />
         <div className="detailsProfils">
-          <div className="detailProfil">
+        <img src="../assets/robot2.jpg" alt="" />
+          <div className="detailProfil1">
             <ul>
               <li>{starWarsCharacters.name}</li>
               <li>Taille :{starWarsCharacters.height}m</li>
               <li>{starWarsCharacters.mass}kg</li>
             </ul>
           </div>
-          <div className="detailProfil">
+          <div className="detailProfil2">
             <ul>
               <li>{starWarsCharacters.gender}</li>
               <li>{starWarsCharacters.homeworld}</li>
@@ -39,7 +41,7 @@ function Character ({}) {
         </div>
 
         <div className="likes">
-          <div className="like">
+          <div className="like1">
             <img
               id="imgLike"
               src="../src/assets/ewok_icon-icons.com_76943.svg"
@@ -48,7 +50,7 @@ function Character ({}) {
             <p className="p1">Like</p>
           </div>
           <Link to= "/">
-          <div className="like">
+          <div className="like2">
             <img
               id="imgDislike"
               src="../src/assets/jabba-the-hutt_icon-icons.com_76950.svg"
@@ -58,7 +60,7 @@ function Character ({}) {
           </div>
           </Link>
         </div>
-        <button>Envoyer message</button>
+      <Bouton />    
       </div>
     )
 }
