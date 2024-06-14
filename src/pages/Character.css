@@ -29,7 +29,6 @@ html {
   .detailsProfils {
     display: flex;
     justify-content: center;
-    background-image: url(../assets/robot2.jpg);
     margin-top: 20px;
     width: 90%;
     height: 36vh;
@@ -43,11 +42,13 @@ html {
         flex-direction: column;
         align-items: flex-start;
         padding: 5px;
-      }
 
-      li {
-        list-style: none;
-        color: rgb(230, 224, 224);
+        li {
+          list-style: none;
+          color: rgb(230, 224, 224);
+          padding: 5px;
+          font-weight: bold;
+        }
       }
     }
 
@@ -62,9 +63,11 @@ html {
         padding: 5px;
       }
 
-      li {
+      p {
         list-style: none;
-        color: rgb(242, 242, 243);
+        color: rgb(244, 244, 246);
+        font-weight: bold;
+        line-height: 1.4rem;
       }
     }
   }

@@ -26,7 +26,7 @@ const Footer = () => {
         <img src="src/assets/ligthsaber.svg" className="bottom-third-logo" alt="Logo" />
       </div>
       <div className="footer-item" onClick={() => playSound(c3poSound)}>
-        <h3>Parametre</h3>
+        <h3>Parametres</h3>
         <img src="src/assets/c3p0.svg" className="bottom-fourth-logo" alt="Logo" />
       </div>
     </div>
