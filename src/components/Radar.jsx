@@ -11,7 +11,6 @@ function Radar() {
 
   return (
     <>
-      <h1>StarMatch</h1>
       <div className="radar">
         <div className="img-falcon-box">
           <img

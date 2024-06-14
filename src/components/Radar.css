@@ -1,5 +1,6 @@
 .radar {
     display: flex;
+    margin: auto;
     position: relative;
     width: 60vmin;
     height: 60vmin;
@@ -49,8 +50,8 @@
 
 .radar__dot {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     animation: blink 2s ease-out infinite;
