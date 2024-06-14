@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Pub.css"
+import boutonLaser from './boutonLaser';
+
 const Pub = () => {
     const [isOn, setIsOn] = useState(false);
 
@@ -21,7 +23,9 @@ const Pub = () => {
                     </div>
                     <div className="plasma vader" style={lightsaberStyle}></div>
                 </div>
-                <button className="lightsaber-button">Cliquer ici Salope !</button>
+                <button>
+                <boutonLaser />Appuie sur mon sabre coquine !!
+                </button>
             </div>
         </div>
     );
