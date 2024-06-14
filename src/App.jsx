@@ -8,7 +8,7 @@ import logo2 from './assets/ligthsaber.svg';
 import logo3 from './assets/c3p0.svg';
 import Radar from "./componenents/Radar";
 import { useEffect ,useState  } from "react";
-
+import Pub from './components/Pub.jsx';
 
 import './App.css';
 
@@ -36,15 +36,9 @@ const App = () => {
                             id={character.id}
                             name={character.name} />
                     );
-                })}
-                
+                })}  
                 </div>
-                
-                <div className="profile-row">
-        <a href="https://example.com/image4" target="_blank" rel="noopener noreferrer" className="profile-image-wide-link">
-          <div className="profile-image-wide">Image 4</div>
-        </a>
-      </div>
+                <Pub />
             <div className="app-body">
                 <Radar />
                 <Footer />
