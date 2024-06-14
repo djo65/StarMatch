@@ -8,8 +8,8 @@ import logo2 from './assets/ligthsaber.svg';
 import logo3 from './assets/c3p0.svg';
 import Radar from "./componenents/Radar";
 import { useEffect ,useState  } from "react";
-import { Link } from "react-router-dom";
-import Character from "./pages/Character";
+
+
 import './App.css';
 
 const App = () => {
@@ -19,14 +19,32 @@ const App = () => {
       .then((result) => result.json())
       .then((result) => setStarWarsCharacters(result));
   }, []);
+
+  const specificIds = [66, 8, 78];
+    const filteredCharacters = starWarsCharacters.filter(character => specificIds.includes(character.id));
+
     return (
         <div className="app">
-            <header className="app-header">
+            
                 <Header />
-                <ProfileNav className="Starjout">
-                    {/* Votre contenu ici */}
-                </ProfileNav>
-            </header>
+                <div className='profiles-images'> 
+                    
+                {filteredCharacters.map((character) => {
+                    return (
+                        <ProfileNav
+                            image={character.image}
+                            id={character.id}
+                            name={character.name} />
+                    );
+                })}
+                
+                </div>
+                
+                <div className="profile-row">
+        <a href="https://example.com/image4" target="_blank" rel="noopener noreferrer" className="profile-image-wide-link">
+          <div className="profile-image-wide">Image 4</div>
+        </a>
+      </div>
             <div className="app-body">
                 <Radar />
                 <Footer />

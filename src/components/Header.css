@@ -11,3 +11,25 @@
   border-radius: 20px;
 }
 
+.profile-header {
+  color: #FFE81F; 
+  text-shadow:
+      1px 1px 0 #000,
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 0 0 #000,
+      -1px 0 0 #000,
+      0 1px 0 #000,
+      0 -1px 0 #000; 
+  text-align: center;
+  margin: 20px;
+  
+  h1{
+    font-size: 3rem;
+  }
+  h2{
+    font-size: 1.5rem;
+  }
+}
+
