@@ -11,7 +11,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Character from "./pages/Character";
 import "./App.css";
-
 const App = () => {
   const [starWarsCharacters, setStarWarsCharacters] = useState([]);
   useEffect(() => {
@@ -19,12 +18,27 @@ const App = () => {
       .then((result) => result.json())
       .then((result) => setStarWarsCharacters(result));
   }, []);
+
+  const specificIds = [66, 8, 78];
+  const filteredCharacters = starWarsCharacters.filter((character) =>
+    specificIds.includes(character.id)
+  );
+
   return (
     <div className="app">
-      <header className="app-header">
-        <Header />
-        <ProfileNav className="Starjout">{/* Votre contenu ici */}</ProfileNav>
-      </header>
+      <Header />
+      <div className="profiles-images">
+        {filteredCharacters.map((character) => {
+          return (
+            <ProfileNav
+              image={character.image}
+              id={character.id}
+              name={character.name}
+            />
+          );
+        })}
+      </div>
+      <Pub />
       <div className="app-body">
         <Radar />
         <Footer />
