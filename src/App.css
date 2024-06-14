@@ -30,40 +30,6 @@ html {
   opacity: 0.95;
 }
 
-.bottom-left-logo {
-  position: relative;
-  bottom: 5px;
-  width: 50px;
-  height: auto;
-  opacity: 0.8;
-  right: 90px;
-}
-
-.bottom-secund-logo {
-  position: relative;
-  bottom: 15px;
-  width: 50px;
-  height: auto;
-  opacity: 0.8;
-  right: 40px;
-}
-
-.bottom-third-logo {
-  position: relative;
-  width: 50px;
-  height: auto;
-  left: 15px;
-  bottom: 8px;
-}
-
-.bottom-fourth-logo {
-  bottom: 10px;
-  position: relative;
-  width: 50px;
-  height: auto;
-  left: 70px;
-}
-
 .profiles-images {
   display: flex;
   justify-content: space-around;
